@@ -28,8 +28,8 @@ exec --no-startup-id dex --autostart --environment i3
 #autotiling
 #exec --no-startup-id autotiling
 
-gaps inner 4
-gaps outer 2
+#gaps inner 4
+#gaps outer 2
 smart_borders on
 
 # Start rofi
@@ -38,7 +38,7 @@ bindsym $mod+d exec --no-startup-id ~/.config/rofi/bin/launcher
 bindsym Print exec --no-startup-id ~/.config/rofi/bin/screenshot
 
 # Border in windows / Disable TitleBar
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 
 #clipboard
 exec --no-startup-id xclip -o
@@ -243,13 +243,13 @@ bindsym $mod+r mode "resize"
 # }
 
 
-exec --no-startup-id ~/.config/polybar/start_polybar.sh
+exec_always --no-startup-id ~/.config/polybar/start_polybar.sh
 bindsym $mod+shift+x exec i3lock && systemctl suspend
 
 # Touchpad controls
 # bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Wallpaper
-exec_always feh --bg-scale /home/rik/Downloads/p4.png
+exec_always feh --bg-scale /home/rik/.config/i3/WallPaper6.jpg
 # Compton compositor
 #exec compton -f
