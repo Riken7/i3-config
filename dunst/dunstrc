@@ -1,0 +1,4 @@
+[global]
+timeout = 30
+font = JetBrainsMono Nerd Font 10
+close_all = "Escape"
